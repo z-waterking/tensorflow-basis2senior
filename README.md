@@ -28,13 +28,16 @@ tensorflow环境为：1.10
 
 # 1. Tensorflow基础
 
-基础部分做一个参考。随着Tensorflow版本的提升，许多方法、变量都会废弃，
+基础部分做一个参考。随着Tensorflow版本的提升，许多方法、变量都会废弃。
 
 | Content    | .ipynb文件  |  .py 文件 |
 | ------------------ | :--------------------- | :--------------------------: |
 | 1.第一个tf程序 | [第一个tf程序.ipynb](PreKnowledge/1.第一个tf程序.ipynb) | [第一个tf程序.py](PreKnowledge/1.第一个tf程序.py) |
 | 2.Tensor的构建 | [Tensor的构建.ipynb](PreKnowledge/2.Tensor的构建.ipynb) | [Tensor的构建.py](PreKnowledge/2.Tensor的构建.py) |
 | 3.Tensor的基本运算 | [Tensor的基本运算.ipynb](PreKnowledge/3.Tensor的基本运算.ipynb) | [Tensor的构建.py](PreKnowledge/3.Tensor的基本运算.py) |
+| 4.搭建一个线性模型 | [搭建一个线性模型.ipynb](PreKnowledge/4.搭建一个线性模型.ipynb) | [搭建一个线性模型.py](PreKnowledge/4.搭建一个线性模型.py) |
+| 5.名称空间与变量空间 | [名称空间与变量空间.ipynb](PreKnowledge/5.名称空间与变量空间.ipynb) | [名称空间与变量空间.py](PreKnowledge/5.名称空间与变量空间.py) |
+
 
 # 参考文献
 
