@@ -30,7 +30,7 @@ tensorflow环境为：1.10
 
 基础部分做一个参考。随着Tensorflow版本的提升，许多方法、变量都会废弃，
 
-| Content    | .ipyno文件  |  .py 文件 |
+| Content    | .ipynob文件  |  .py 文件 |
 | ------------------ | :--------------------- | :--------------------------: |
 | 1.第一个tf程序 | [第一个tf程序.ipynb](PreKnowledge/1.第一个tf程序.ipynb) | [第一个tf程序.py](PreKnowledge/1.第一个tf程序.py) |
 | 2.Tensor的构建 | [Tensor的构建.ipynb](PreKnowledge/2.Tensor的构建.ipynb) | [Tensor的构建.py](PreKnowledge/2.Tensor的构建.py) |
@@ -41,3 +41,5 @@ tensorflow环境为：1.10
 * 简单粗暴Tensorflow：https://tf.wiki/zh_hans
 
 * 动手学深度学习：https://zh.d2l.ai/index.html
+
+* 线性变换: https://zhuanlan.zhihu.com/p/139551097

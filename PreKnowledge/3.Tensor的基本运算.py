@@ -89,7 +89,9 @@ sess.run(matrix_mul)
 # 4. 矩阵切片
 # 5. 矩阵增加维度
 # 6. 矩阵降低维度
-# 
+# 7. 矩阵按维度复制
+# 8. 矩阵concat拼接
+# 9. 矩阵stack拼接
 
 
 # 矩阵形状变换
@@ -177,4 +179,69 @@ matrix_squeeze_all = tf.squeeze(matrix_expand_dim)
 print('after squeeze axis0', matrix_squeeze_axis0.shape)
 print('after squeeze all', matrix_squeeze_all.shape)
 
+# 7. 矩阵按维度复制
+matrix_d = tf.constant([
+    [1, 2],
+    [3, 4]
+])
 
+# 按照第0个维度复制2次，第1个维度复制3次
+matrix_tile = tf.tile(matrix_d, [2, 3])
+print(sess.run(matrix_tile))
+
+## concat和stack区别
+
+# 这两个函数干的都是拼接矩阵的活。
+#
+# 不同点在于：concat拼接后不会引入新的维度，而stack会引入一个新的维度。
+#
+# stack的具体解释:
+#
+# 想象2个矩阵A和B都是4*3的形状，现在想把它们stack一下。
+#
+# 则axis的选择决定了哪个维度会增加:
+#
+# 原先的维度为(_,4,_,3,_)，下划线的地方分别代表axis = 0, 1, 2时会增加的地方，增加的维度为拼接的矩阵数量。
+#
+# stack后，根据你的axis不同，会在之前的下划线处将维度变为2
+
+# 8. 矩阵concat拼接
+matrix_sub_1 = tf.constant([
+    [1, 2],
+    [3, 4]
+])
+
+matrix_sub_2 = tf.constant([
+    [5, 6],
+    [7, 8]
+])
+
+matrix_concat_0 = tf.concat([matrix_sub_1, matrix_sub_2], axis = 0)
+matrix_concat_1 = tf.concat([matrix_sub_1, matrix_sub_2], axis = 1)
+
+print('matrix_concat_0', sess.run(matrix_concat_0), matrix_concat_0.shape)
+print('matrix_concat_1', sess.run(matrix_concat_1), matrix_concat_1.shape)
+
+# 9. 矩阵stack拼接
+matrix_sub_1 = tf.constant([
+    [1, 2, 3],
+    [4, 5, 6],
+    [1, 2, 3],
+    [4, 5, 6]
+])
+
+matrix_sub_2 = tf.constant([
+    [5, 6, 7],
+    [7, 8, 9],
+    [5, 6, 7],
+    [7, 8, 9]
+])
+
+matrix_stack_0 = tf.stack([matrix_sub_1, matrix_sub_2], axis = 0)
+matrix_stack_1 = tf.stack([matrix_sub_1, matrix_sub_2], axis = 1)
+matrix_stack_2 = tf.stack([matrix_sub_1, matrix_sub_2], axis = 2)
+
+print('matrix_sub_shape', matrix_sub_1.shape)
+print('matrix_stack_0', sess.run(matrix_stack_0), matrix_stack_0.shape)
+print('matrix_stack_1', sess.run(matrix_stack_1), matrix_stack_1.shape)
+print('matrix_stack_2', sess.run(matrix_stack_2), matrix_stack_2.shape)
