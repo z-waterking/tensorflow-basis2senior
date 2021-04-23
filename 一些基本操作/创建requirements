@@ -1,3 +1,5 @@
-主目录下执行：pipreqs . --encoding=utf-8 --force，生成requirements文件
 
-本地执行：pip install -r requirements，安装所有的依赖
+
+生成requirements文件: 主目录下执行：pipreqs . --force
+安装所有的依赖: pip install -r requirements
+
