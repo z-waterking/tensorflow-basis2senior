@@ -37,9 +37,14 @@ tensorflow环境为：1.10
 | 3.Tensor的基本运算 | [Tensor的基本运算.ipynb](PreKnowledge/3.Tensor的基本运算.ipynb) | [Tensor的构建.py](PreKnowledge/3.Tensor的基本运算.py) |
 | 4.搭建一个线性模型 | [搭建一个线性模型.ipynb](PreKnowledge/4.搭建一个线性模型.ipynb) | [搭建一个线性模型.py](PreKnowledge/4.搭建一个线性模型.py) |
 | 5.名称空间与变量空间 | [名称空间与变量空间.ipynb](PreKnowledge/5.名称空间与变量空间.ipynb) | [名称空间与变量空间.py](PreKnowledge/5.名称空间与变量空间.py) |
+| 6.tf读取csv数据 | [tf读取csv数据.ipynb](PreKnowledge/6.tf读取csv数据.ipynb) | [tf读取csv数据.py](PreKnowledge/6.tf读取csv数据.py) |
+| 7.TensorBoard使用 | [TensorBoard使用.ipynb](PreKnowledge/7.TensorBoard使用.ipynb) | [TensorBoard使用.py](PreKnowledge/7.TensorBoard使用.py) |
+| 8.TF网络格式参考使用 | [TF网络格式参考使用.ipynb](PreKnowledge/8.TF网络格式参考使用.ipynb) | [TF网络格式参考使用.py](PreKnowledge/8.TF网络格式参考使用.py) |
 
 
 # 参考文献
+
+* Tensorflow官方文档：https://www.tensorflow.org/learn
 
 * 简单粗暴Tensorflow：https://tf.wiki/zh_hans
 

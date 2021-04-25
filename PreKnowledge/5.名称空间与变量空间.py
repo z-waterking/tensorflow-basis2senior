@@ -43,7 +43,7 @@ print('v2', v2)
 # tf.get_variable在没有设置命名空间reuse的情况下变量命名冲突时报错
 
 # 这里第一次运行时，等于是新建一个变量，不会报错
-# 你再运行一次，就会报错。原因是'v2'这个变量名缩在的名称空间并不是可重用的
+# 你再运行一次，就会报错。原因是'a'这个变量名所在的名称空间并不是可重用的
 v3 = tf.get_variable(name = 'a', shape = [1], initializer=tf.constant_initializer(1.0))
 v4 = tf.get_variable(name = 'a', shape = [1], initializer=tf.constant_initializer(1.0))
 

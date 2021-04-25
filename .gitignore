@@ -1,3 +1,5 @@
+model/
+logs/
 DataSet/
 .ipynb_checkpoints/
 *.pth
