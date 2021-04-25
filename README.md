@@ -39,7 +39,7 @@ tensorflow环境为：1.10
 | 5.名称空间与变量空间 | [名称空间与变量空间.ipynb](PreKnowledge/5.名称空间与变量空间.ipynb) | [名称空间与变量空间.py](PreKnowledge/5.名称空间与变量空间.py) |
 | 6.tf读取csv数据 | [tf读取csv数据.ipynb](PreKnowledge/6.tf读取csv数据.ipynb) | [tf读取csv数据.py](PreKnowledge/6.tf读取csv数据.py) |
 | 7.TensorBoard使用 | [TensorBoard使用.ipynb](PreKnowledge/7.TensorBoard使用.ipynb) | [TensorBoard使用.py](PreKnowledge/7.TensorBoard使用.py) |
-| 8.TF网络格式参考使用 | [TF网络格式参考使用.ipynb](PreKnowledge/8.TF网络格式参考使用.ipynb) | [TF网络格式参考使用.py](PreKnowledge/8.TF网络格式参考使用.py) |
+| 8.TF网络格式参考使用 | [TF网络格式参考.ipynb](PreKnowledge/8.TF网络格式参考.ipynb) | [TF网络格式参考.py](PreKnowledge/8.TF网络格式参考.py) |
 
 
 # 参考文献
